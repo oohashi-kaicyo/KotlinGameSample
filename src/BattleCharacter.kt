@@ -1,11 +1,15 @@
 /**
  * Created by oohashi on 2017/06/18.
  */
-class BattleCharacter {
-    var Hp:    Int get set
-    var Level: Int get set
+abstract class BattleCharacter: IAttack {
+    var hp:    Int get set
+    var level: Int get set
     constructor() {
-        Hp = 0
-        Level = 1
+        this.hp = 0
+        this.level = 1
+    }
+    override fun attack(enemies: Array<BattleCharacter>) {
+        val myself: BattleCharacter = this
+        // var damage: Damage = Damage(myself, enemies)
     }
 }
