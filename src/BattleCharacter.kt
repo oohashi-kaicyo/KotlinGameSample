@@ -10,6 +10,6 @@ abstract class BattleCharacter: IAttack {
     }
     override fun attack(enemies: Array<BattleCharacter>) {
         val myself: BattleCharacter = this
-        // var damage: Damage = Damage(myself, enemies)
+        var damage: Damage = Damage(myself, enemies)
     }
 }
