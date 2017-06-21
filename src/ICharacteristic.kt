@@ -13,5 +13,5 @@ enum class Characteristic {
     human
 }
 interface ICharacteristic {
-    var Characteristices: Array<Characteristic> get
+    var Characteristics: Array<Characteristic> get
 }
